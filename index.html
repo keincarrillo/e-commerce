@@ -3,9 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="styles.css">
     <title>e-commerce</title>
 </head>
 <body>
-    
+    <main class="container">
+        <header>
+            <i class="bi bi-list"></i>
+            <img src="#" alt="Logo" class="header__logo"> <!--PONER LOGO-->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="navbar__link">Colección</a></li>
+                    <li><a href="#" class="navbar__link">Hombre</a></li>
+                    <li><a href="#" class="navbar__link">Mujer</a></li>
+                    <li><a href="#" class="navbar__link">About</a></li>
+                    <li><a href="#" class="navbar__link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- MODAL INICIO -->
+            <div class="navbar-color">
+                <div class="navbar-items">
+                    <i class="bi bi-x"></i>
+                    <ul>
+                        <li><a href="#" class="modal-navbar__link">Colección</a></li>
+                        <li><a href="#" class="modal-navbar__link">Hombre</a></li>
+                        <li><a href="#" class="modal-navbar__link">Mujer</a></li>
+                        <li><a href="#" class="modal-navbar__link">About</a></li>
+                        <li><a href="#" class="modal-navbar__link">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- MODAL FIN -->
+
+            <div class="header__cart">
+                <div class="header__cart--notificacion">3</div>
+                <i class="bi bi-cart-fill"></i>
+            </div>
+        </header>
+        <section class="content">
+            <article class="gallery">
+                <div class="gallery__next-container">
+                    <i class="bi bi-arrow-left"></i>
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+                <div class="gallery__mini">
+                    <img src="./images/image-product-1-thumbnail.jpg" alt="" id="miniatura1" class="gallery__mini-image">
+                    <img src="./images/image-product-2-thumbnail.jpg" alt="" id="miniatura2" class="gallery__mini-image">
+                    <img src="./images/image-product-3-thumbnail.jpg" alt="" id="miniatura3" class="gallery__mini-image">
+                    <img src="./images/image-product-4-thumbnail.jpg" alt="" id="miniatura4" class="gallery__mini-image">
+                </div>
+            </article>
+            <article class="details">
+                <h2 class="details__company">compañia de producto</h2>
+                <h2 class="details__title">Titulo del producto</h2>
+                <p class="details__description">descripcion Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis quidem consequatur, enim nobis dolor aut!</p>
+                <div class="details__prices">
+                    <p class="details__price">$150</p>
+                </div>
+                <div class="details__product-quantity">
+                    <div class="input">
+                        <i class="bi bi-dash"></i>
+                        <input type="text" value="0" class="input__number">
+                        <i class="bi bi-plus"></i>
+                    </div>
+                    <button class="details__button"><i class="bi bi-cart-fill"></i>Agregar al carrito</button>
+                </div>
+            </article>
+        </section>
+
+        <!-- INICIO CART MODAL -->
+        <div class="cart-modal">
+            <p class="cart-modal__title">Cart</p>
+            <div class="cart-modal__checkout-container">
+                <div class="cart-modal__details-container">
+                    <img src="./images/image-product-1-thumbnail.jpg" alt="" class="cart-modal__img">
+                    <div>
+                        <p class="cart-modal__product">Breve descripcion del producto...</p>
+                        <p class="cart-modal__product">$125.00 x 3 <span>$375.00</span></p>
+                    </div>
+                    <i class="bi bi-trash"></i>
+                </div>
+                <button class="cart-modal__delete">Comprar</button>
+            </div>
+        </div>
+        <!-- FIN CART MODAL -->
+
+        <!-- INICIO GALLERY MODAL -->
+        <div class="modal-gallery__background">
+            <article class="modal-gallery">
+                <i class="bi bi-x"></i>
+                <div class="modal-gallery__next-container">
+                    <i class="bi bi-arrow-left"></i>
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+                <div class="modal-gallery__mini">
+                    <img src="./images/image-product-1-thumbnail.jpg" alt="" id="m1" class="modal-gallery__mini-image">
+                    <img src="./images/image-product-2-thumbnail.jpg" alt="" id="m2" class="modal-gallery__mini-image">
+                    <img src="./images/image-product-3-thumbnail.jpg" alt="" id="m3" class="modal-gallery__mini-image">
+                    <img src="./images/image-product-4-thumbnail.jpg" alt="" id="m4" class="modal-gallery__mini-image">
+                </div>
+            </article>
+        </div>
+        <!-- FIN GALLERY MODAL -->
+    </main>
 </body>
 </html>
